@@ -11,12 +11,13 @@ public class Inicio {
 		EPServiceProvider engine = EPServiceProviderManager.getDefaultProvider();
 		engine.getEPAdministrator().getConfiguration().addEventType(TemperatureEvent.class);
 
-		String epl = "select temp from TemperatureEvent";
+		
+		// 4ª QUESTÃO
+		
+		/*String epl = "select temp from TemperatureEvent";
 		EPStatement statement = engine.getEPAdministrator().createEPL(epl);
 
-		// 4ª Questão
-		
-		/*List<Double> totalTemp = new ArrayList<>();
+		List<Double> totalTemp = new ArrayList<>();
 
 		List<Long> tuple = new ArrayList<>();
 		Long initTime = System.currentTimeMillis();
@@ -44,6 +45,32 @@ public class Inicio {
 			tuple.set(1, tuple.get(1)+1);
 		});*/
 
+		
+		//5ª QUESTÃO
+		
+		String epl = "select nCracha, nome, entrando from CatracaEvent";
+		EPStatement statement = engine.getEPAdministrator().createEPL(epl);
+		
+		List<Long> tuple = new ArrayList<>();
+		tuple.add(System.currentTimeMillis());
+		tuple.add((long) 0);
+		tuple.add((long) 0);
+		
+		statement.addListener((newData, oldData) -> {
+			CatracaEvent novo = new CatracaEvent((long) newData[0].get("nCracha"), (String) newData[0].get("nome"), (boolean) newData[0].get("entrando"));
+			if(novo.isEntrando()) {
+				tuple.set(1, tuple.get(1)+1);
+			} else {
+				tuple.set(2, tuple.get(2)+1);
+			}
+			if((System.currentTimeMillis() - tuple.get(0)) >= 3600000) {
+				System.out.println(String.format("Entraram %d pessoas na última hora", tuple.get(1)));
+			}
+			if((System.currentTimeMillis() - tuple.get(0)) >= 3600000) {
+				System.out.println(String.format("Entraram %d pessoas na última hora", tuple.get(2)));
+			}
+		});
+		
 		new SendEvents(engine).start();
 	}
 

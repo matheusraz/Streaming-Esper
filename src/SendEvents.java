@@ -10,7 +10,9 @@ public class SendEvents extends Thread {
 		this.engine = engine;
 	}
 
-	public void run() {
+	//4ª Questão
+	
+	/*public void run() {
 		try(Scanner scan = new Scanner(System.in)) {
 			try {
 				String input;
@@ -23,5 +25,31 @@ public class SendEvents extends Thread {
 				System.out.println("Fim do envio de eventos.");
 			}
 		}
+	}*/
+	
+	
+	//5ª Questão
+	public void run() {
+		try(Scanner scan = new Scanner(System.in)) {
+			try {
+				String inputCracha;
+				String inputNome;
+				String passagem;
+				boolean isEntrando;
+				while(true) {
+					System.out.println("Informe o numero do crachá: ");
+					inputCracha = scan.nextLine();
+					System.out.println("Informe seu nome: ");
+					inputNome = scan.nextLine();
+					System.out.println("Informe se está entrando (1) ou saindo(0): ");
+					passagem = scan.nextLine();
+					isEntrando = (Short.parseShort(passagem) == 1) ? true : false;
+					engine.getEPRuntime().sendEvent(new CatracaEvent(Long.parseLong(inputCracha), inputNome, isEntrando));
+				}
+			} catch (Exception e) {
+				System.out.println("Fim do envio de eventos.");
+			}
+		}
 	}
+	
 }
