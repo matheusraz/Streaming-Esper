@@ -3,9 +3,9 @@ public class CatracaEvent {
 
 	private Long nCracha;
 	private String nome;
-	private boolean isEntrando = false;
+	private Boolean isEntrando;
 	
-	public CatracaEvent(Long nCracha, String nome, boolean isEntrando) {
+	public CatracaEvent(Long nCracha, String nome, Boolean isEntrando) {
 		this.nCracha = nCracha;
 		this.nome = nome;
 		this.isEntrando = isEntrando;
@@ -23,10 +23,10 @@ public class CatracaEvent {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public boolean isEntrando() {
+	public Boolean getisEntrando() {
 		return isEntrando;
 	}
-	public void setEntrando(boolean isEntrando) {
+	public void setisEntrando(Boolean isEntrando) {
 		this.isEntrando = isEntrando;
 	}
 	

@@ -41,7 +41,7 @@ public class SendEvents extends Thread {
 					inputCracha = scan.nextLine();
 					System.out.println("Informe seu nome: ");
 					inputNome = scan.nextLine();
-					System.out.println("Informe se está entrando (1) ou saindo(0): ");
+					System.out.println("Informe se está entrando (1) ou saindo (0): ");
 					passagem = scan.nextLine();
 					isEntrando = (Short.parseShort(passagem) == 1) ? true : false;
 					engine.getEPRuntime().sendEvent(new CatracaEvent(Long.parseLong(inputCracha), inputNome, isEntrando));
