@@ -2,22 +2,22 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/antlr-runtime-4.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/cglib-nodep-3.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/commons-compiler-3.0.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/janino-3.0.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/slf4j-api-1.7.25.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper/lib/slf4j-log4j12-1.7.25.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper-7.1.0.jar" sourcepath="C:/Users/mrol.ITAUTEC/.m2/repository/com/espertech/esper/7.1.0/esper-7.1.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esper-avro-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-amqp-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-csv-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-db-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-http-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-kafka-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-socket-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-springjms-7.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mrol.ITAUTEC/Desktop/esper-7.1.0/esperio-stax-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/antlr-runtime-4.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/cglib-nodep-3.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/commons-compiler-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/janino-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper/lib/slf4j-log4j12-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esper-avro-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-amqp-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-csv-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-db-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-http-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-kafka-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-socket-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-springjms-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mrol/Desktop/esper-7.1.0/esperio-stax-7.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
